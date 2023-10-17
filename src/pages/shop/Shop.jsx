@@ -4,16 +4,17 @@ import Popular from "../../components/popular/Popular";
 import Offers from "../../components/offers/Offers";
 import NewCollections from "../../components/newCollections/NewCollections";
 import NewsLetter from "../../components/newsLetter/NewsLetter";
+import Layout from "../../components/layout/Layout";
 
 function Shop() {
   return (
-    <div>
+    <Layout>
       <Hero />
       <Popular />
       <Offers />
       <NewCollections />
       <NewsLetter />
-    </div>
+    </Layout>
   );
 }
 

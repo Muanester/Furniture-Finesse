@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import logo from "../assets/logo.png";
 import cart_icon from "../assets/cart_icon.png";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../context/ShopContext";
 
 function Navbar() {
   const [menu, setMenu] = useState("shop");
+
+  const { getTotalCartItems } = useContext(ShopContext);
 
   return (
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="" />
-        <p>SHOPPER</p>
+        <Link to={"/"} style={{ textDecoration: "none" }}>
+          <p>SHOPPER</p>
+        </Link>
       </div>
       <ul className="nav-menu">
         <li
@@ -23,24 +28,27 @@ function Navbar() {
         </li>
         <li
           onClick={() => {
-            setMenu("men");
+            setMenu("dining");
           }}
         >
-          <Link to={"/mens"}>Men</Link> {menu === "men" ? <hr /> : <></>}
+          <Link to={"/dining"}>Dining</Link>{" "}
+          {menu === "dining" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
-            setMenu("women");
+            setMenu("seating");
           }}
         >
-          <Link to={"/womens"}>Women</Link> {menu === "women" ? <hr /> : <></>}
+          <Link to={"/seating"}>Seating</Link>{" "}
+          {menu === "seating" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
-            setMenu("kids");
+            setMenu("bedroom");
           }}
         >
-          <Link to={"/kids"}>Kids</Link> {menu === "kids" ? <hr /> : <></>}
+          <Link to={"/bedroom"}>Bedroom</Link>{" "}
+          {menu === "bedroom" ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
@@ -50,7 +58,7 @@ function Navbar() {
         <Link to={"/cart"}>
           <img src={cart_icon} alt="" />
         </Link>
-        <div className="nav-cart-count">0</div>
+        <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
     </div>
   );

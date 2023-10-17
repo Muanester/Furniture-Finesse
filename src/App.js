@@ -1,34 +1,37 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
 import Shop from "./pages/shop/Shop";
 import ShopCategory from "./pages/shopCategory/ShopCategory";
 import Product from "./pages/product/Product";
 import Cart from "./pages/cart/Cart";
 import LoginSignup from "./pages/loginSignup/LoginSignup";
-import Footer from "./components/footer/Footer";
-import men_banner from "./components/assets/banner_mens.png";
-import women_banner from "./components/assets/banner_women.png";
-import kid_banner from "./components/assets/banner_kids.png";
+import dining_banner from "./components/assets/images/dining_banner.jpg";
+import seating_banner from "./components/assets/images/seating_banner.jpg";
+import bedroom_banner from "./components/assets/images/bedroom_banner.jpg";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route
-            path="/mens"
-            element={<ShopCategory banner={men_banner} category={"men"} />}
+            path="/dining"
+            element={
+              <ShopCategory banner={dining_banner} category={"dining"} />
+            }
           />
           <Route
-            path="/womens"
-            element={<ShopCategory banner={women_banner} category={"women"} />}
+            path="/seating"
+            element={
+              <ShopCategory banner={seating_banner} category={"seating"} />
+            }
           />
           <Route
-            path="/kids"
-            element={<ShopCategory banner={kid_banner} category={"kid"} />}
+            path="/bedroom"
+            element={
+              <ShopCategory banner={bedroom_banner} category={"bedroom"} />
+            }
           />
           <Route path="/product" element={<Product />}>
             <Route path=":productId" element={<Product />} />
@@ -36,7 +39,6 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );

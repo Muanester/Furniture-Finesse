@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import Breadcrum from "../../components/breadcrum/Breadcrum";
 import ProductDisplay from "../../components/productDisplay/ProductDisplay";
 import DescriptionBox from "../../components/descriptionBox/DescriptionBox";
+import RelatedProducts from "../../components/relatedProducts/RelatedProducts";
+import Layout from "../../components/layout/Layout";
 
 function Product() {
   const { all_products } = useContext(ShopContext);
@@ -12,11 +14,12 @@ function Product() {
   const product = all_products.find((e) => e.id === Number(productId));
 
   return (
-    <div>
+    <Layout>
       <Breadcrum product={product} />
       <ProductDisplay product={product} />
       <DescriptionBox />
-    </div>
+      <RelatedProducts product={product} />
+    </Layout>
   );
 }
 

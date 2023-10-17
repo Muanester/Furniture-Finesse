@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import hand_icon from "../assets/hand_icon.png";
 import arrow_icon from "../assets/arrow.png";
-import hero_image from "../assets/hero_image.png";
+import bed from "../assets/images/bed.png";
 
 function Hero() {
   return (
@@ -23,7 +23,7 @@ function Hero() {
         </div>
       </div>
       <div className="hero-right">
-        <img src={hero_image} alt="" />
+        <img src={bed} alt="" />
       </div>
     </div>
   );
