@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div className="hero">
       <div className="hero-left">
-        <h2>NEW ARRIVALS ONLY</h2>
+        <h2>NEW DESIGNS ONLY</h2>
         <div>
           <div className="hero-hand-icon">
             <p>New</p>
@@ -18,7 +18,7 @@ function Hero() {
           <p>for everyone</p>
         </div>
         <div className="hero-latest-btn">
-          <div>Latest Collections</div>
+          <span>Latest Collections</span>
           <img src={arrow_icon} alt="" />
         </div>
       </div>

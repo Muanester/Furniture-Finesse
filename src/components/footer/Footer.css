@@ -10,11 +10,12 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  height: 20px;
 }
 
 .footer-logo p {
   color: #383838;
-  font-size: 46px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -23,7 +24,7 @@
   list-style: none;
   gap: 50px;
   color: #252525;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .footer-links li {
@@ -41,6 +42,10 @@
   border: 1px solid #ebebeb;
 }
 
+.footer-icon-container img {
+  height: 20px;
+}
+
 .footer-copyright {
   display: flex;
   flex-direction: column;
@@ -49,7 +54,7 @@
   width: 100%;
   margin-bottom: 30px;
   color: #1a1a1a;
-  font-size: 20px;
+  font-size: 13px;
 }
 
 .footer-copyright hr {
@@ -58,4 +63,62 @@
   border-radius: 10px;
   height: 3px;
   background: #c7c7c7;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    gap: 30px;
+  }
+
+  .footer-logo img {
+    height: 40px;
+  }
+
+  .footer-logo p {
+    font-size: 20px;
+  }
+
+  .footer-links {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .footer-icon-container img {
+    height: 15px;
+  }
+
+  .footer-copyright hr {
+    height: 2px;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    gap: 20px;
+  }
+
+  .footer-logo img {
+    height: 30px;
+  }
+
+  .footer-logo p {
+    font-size: 18px;
+  }
+
+  .footer-links {
+    gap: 7px;
+    font-size: 10px;
+  }
+
+  .footer-icon-container {
+    padding: 4px 6px;
+  }
+
+  .footer-icon-container img {
+    height: 13px;
+  }
 }

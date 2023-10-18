@@ -1,8 +1,10 @@
 .hero {
-  margin-top: 99px;
+  margin-top: 70px;
+  margin-bottom: 70px;
   height: 100vh;
   background: linear-gradient(180deg, #fde1ff, rgba(225, 255, 234, 0.133) 60%);
   display: flex;
+  padding: 0 130px;
 }
 
 .hero-left {
@@ -11,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding-left: 180px;
   line-height: 1.1;
 }
 
@@ -23,7 +24,7 @@
 
 .hero-left p {
   color: #171717;
-  font-size: 100px;
+  font-size: 70px;
   font-weight: 700;
 }
 
@@ -43,13 +44,18 @@
   align-items: center;
   gap: 15px;
   width: 310px;
-  height: 70px;
+  height: 60px;
   border-radius: 75px;
   margin-top: 30px;
   background: #ff4141;
   color: white;
   font-size: 22px;
   font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.hero-latest-btn span {
+  font-size: 22px;
 }
 
 .hero-right {
@@ -61,5 +67,95 @@
 
 .hero-right img {
   width: 100%;
-  margin-right: 50px;
+}
+
+@media (max-width: 780px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  .hero-left {
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-hand-icon img {
+    width: 80px;
+  }
+
+  .hero-left div,
+  .hero-left div p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-latest-btn {
+    height: 50px;
+  }
+
+  .hero-latest-btn span {
+    font-size: 18px;
+  }
+
+  .hero-right {
+    width: 80%;
+  }
+
+  .hero-right img {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-left h2 {
+    font-size: 24px;
+  }
+
+  .hero-left p {
+    font-size: 50px;
+  }
+
+  .hero-hand-icon {
+    gap: 15px;
+  }
+
+  .hero-hand-icon img {
+    width: 60px;
+  }
+
+  .hero-latest-btn {
+    height: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero-left div p {
+    font-size: 40px;
+  }
+
+  .hero-hand-icon img {
+    width: 40px;
+  }
+
+  .hero-latest-btn {
+    height: 35px;
+    width: 200px;
+  }
+
+  .hero-latest-btn span {
+    font-size: 14px;
+  }
+
+  .hero-latest-btn img {
+    width: 20px;
+  }
 }
