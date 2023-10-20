@@ -8,6 +8,7 @@ import LoginSignup from "./pages/loginSignup/LoginSignup";
 import dining_banner from "./components/assets/images/dining_banner.jpg";
 import seating_banner from "./components/assets/images/seating_banner.jpg";
 import bedroom_banner from "./components/assets/images/bedroom_banner.jpg";
+import Dashboard from "./pages/admin/dashboard/Dashboard";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               <ShopCategory banner={bedroom_banner} category={"bedroom"} />
             }
           />
+          <Route path="/admin" element={<Dashboard />} />
           <Route path="/product" element={<Product />}>
             <Route path=":productId" element={<Product />} />
           </Route>

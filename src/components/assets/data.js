@@ -6,31 +6,31 @@ import dining4 from "./images/dining4.webp";
 let data_product = [
   {
     id: 1,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Interior design for dining room is not that complicated to do",
     image: dining1,
-    new_price: 50.0,
-    old_price: 80.5,
+    new_price: 50000,
+    old_price: 80000,
   },
   {
     id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Interior design for dining room is not that complicated to do",
     image: dining2,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 85000,
+    old_price: 120000,
   },
   {
     id: 3,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Interior design for dining room is not that complicated to do",
     image: dining3,
-    new_price: 60.0,
-    old_price: 100.5,
+    new_price: 60000,
+    old_price: 100000,
   },
   {
     id: 4,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Interior design for dining room is not that complicated to do",
     image: dining4,
-    new_price: 100.0,
-    old_price: 150.0,
+    new_price: 100000,
+    old_price: 150000,
   },
 ];
 

@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import "./Navbar.css";
-import logo from "../assets/logo.png";
 import cart_icon from "../assets/cart_icon.png";
 import nav_icon from "../assets/menu.png";
 import close_icon from "../assets/cart_cross_icon.png";
@@ -20,12 +19,19 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="nav-logo">
+      <Link to={"/"}>
+        <div className="nav-logo">
+          <h1>
+            Furniture<span className="danger">Finesse</span>
+          </h1>
+        </div>
+      </Link>
+      {/* <div className="nav-logo">
         <img src={logo} alt="" />
         <Link to={"/"} style={{ textDecoration: "none" }}>
           <p>SHOPPER</p>
         </Link>
-      </div>
+      </div> */}
       <div className="normal-screen-media">
         <ul className="nav-menu">
           <li
@@ -58,6 +64,10 @@ function Navbar() {
           >
             <Link to={"/bedroom"}>Bedroom</Link>{" "}
             {menu === "bedroom" ? <hr /> : <></>}
+          </li>
+
+          <li>
+            <Link to={"/admin"}>Admin</Link>
           </li>
         </ul>
         <div className="nav-login-cart">

@@ -41,6 +41,7 @@
   padding: 10px 10px 6px 10px;
   background: #fbfbfb;
   border: 1px solid #ebebeb;
+  cursor: pointer;
 }
 
 .footer-icon-container img {
