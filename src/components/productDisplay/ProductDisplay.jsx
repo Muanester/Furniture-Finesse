@@ -27,8 +27,8 @@ function ProductDisplay(props) {
           <img src={star_icon} alt="" />
           <img src={star_icon} alt="" />
           <img src={star_icon} alt="" />
-          <img src={star_dull_icon} alt="" />
-          <p>(100)</p>
+          <img src={star_icon} alt="" />
+          <p>(Top Rated)</p>
         </div>
         <div className="productdisplay-right-prices">
           <div className="productdisplay-right-price-old">
@@ -43,7 +43,7 @@ function ProductDisplay(props) {
           beatae, at molestiae ullam harum odio minima tempora ratione impedit
           vero!
         </div>
-        <div className="productdisplay-right-size">
+        {/* <div className="productdisplay-right-size">
           <h1>Select Size</h1>
           <div className="productdisplay-right-sizes">
             <div>S</div>
@@ -52,7 +52,7 @@ function ProductDisplay(props) {
             <div>XL</div>
             <div>XXL</div>
           </div>
-        </div>
+        </div> */}
         <button
           onClick={() => {
             addToCart(product.id);
@@ -60,9 +60,7 @@ function ProductDisplay(props) {
         >
           ADD TO CART
         </button>
-        <p className="productdisplay-right-category">
-          <span>Category : </span> Women, T-Shirt, Crop Top
-        </p>
+
         <p className="productdisplay-right-category">
           <span>Tags : </span> Modern, Latest
         </p>

@@ -1,5 +1,5 @@
 .descriptionbox {
-  margin: 120px 170px;
+  margin: 100px 0;
 }
 
 .descriptionbox-navigator {
@@ -13,7 +13,7 @@
   font-size: 16px;
   font-weight: 600;
   width: 171px;
-  height: 70px;
+  height: 60px;
   border: 1px solid #d0d0d0;
 }
 
@@ -29,4 +29,56 @@
   border: 1px solid #d0d0d0;
   padding: 48px;
   padding-bottom: 70px;
+  font-size: 15px;
+}
+
+@media (max-width: 780px) {
+  .descriptionbox {
+    margin: 80px 0;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 15px;
+    width: 151px;
+    height: 50px;
+  }
+
+  .descriptionbox-description {
+    padding: 45px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .descriptionbox {
+    margin: 50px 0;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+  }
+
+  .descriptionbox-description {
+    padding: 30px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .descriptionbox {
+    margin: 40px 0;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 13px;
+    width: 100px;
+    height: 35px;
+  }
+
+  .descriptionbox-description {
+    padding: 20px;
+    font-size: 11px;
+  }
 }

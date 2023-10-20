@@ -14,12 +14,14 @@ function Product() {
   const product = all_products.find((e) => e.id === Number(productId));
 
   return (
-    <Layout>
-      <Breadcrum product={product} />
-      <ProductDisplay product={product} />
-      <DescriptionBox />
-      <RelatedProducts product={product} />
-    </Layout>
+    <div className="product">
+      <Layout>
+        <Breadcrum product={product} />
+        <ProductDisplay product={product} />
+        <DescriptionBox />
+        <RelatedProducts product={product} />
+      </Layout>
+    </div>
   );
 }
 
