@@ -15,7 +15,7 @@ function DescriptionBox() {
           possimus, minima molestias provident, similique cum nihil recusandae
           doloremque accusantium tempora nulla? Praesentium corporis repellat
           excepturi consectetur quo saepe voluptatum provident dolorum quasi,
-          sit atque totam necessitatibus iusto? Necessitatibus, quod quia?
+          sit atque totam necessitatibus iusto?
         </p>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
