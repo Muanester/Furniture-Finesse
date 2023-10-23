@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Furniture-Finesse/static/css/main.c5641b6f.css",
-    "main.js": "/Furniture-Finesse/static/js/main.2ae97622.js",
+    "main.js": "/Furniture-Finesse/static/js/main.cf2815a0.js",
     "static/js/787.4ea5a4ce.chunk.js": "/Furniture-Finesse/static/js/787.4ea5a4ce.chunk.js",
     "static/media/dining10.jpg": "/Furniture-Finesse/static/media/dining10.e8526cab3a5422abd0ce.jpg",
     "static/media/bed.png": "/Furniture-Finesse/static/media/bed.2b016dbe5c83199ef67d.png",
@@ -47,11 +47,11 @@
     "static/media/seating5.jpeg": "/Furniture-Finesse/static/media/seating5.a1f9d414692539c9cef9.jpeg",
     "index.html": "/Furniture-Finesse/index.html",
     "main.c5641b6f.css.map": "/Furniture-Finesse/static/css/main.c5641b6f.css.map",
-    "main.2ae97622.js.map": "/Furniture-Finesse/static/js/main.2ae97622.js.map",
+    "main.cf2815a0.js.map": "/Furniture-Finesse/static/js/main.cf2815a0.js.map",
     "787.4ea5a4ce.chunk.js.map": "/Furniture-Finesse/static/js/787.4ea5a4ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5641b6f.css",
-    "static/js/main.2ae97622.js"
+    "static/js/main.cf2815a0.js"
   ]
 }
