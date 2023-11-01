@@ -189,7 +189,7 @@
     height: 40px;
   }
 
-  .nav-logo p {
+  .nav-logo h1 {
     font-size: 25px;
   }
 }
@@ -203,7 +203,7 @@
     display: none;
   }
 
-  .nav-logo p {
+  .nav-logo h1 {
     font-size: 20px;
   }
 
