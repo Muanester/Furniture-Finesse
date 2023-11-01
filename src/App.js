@@ -9,6 +9,8 @@ import dining_banner from "./components/assets/images/dining_banner.jpg";
 import seating_banner from "./components/assets/images/seating_banner.jpg";
 import bedroom_banner from "./components/assets/images/bedroom_banner.jpg";
 import Dashboard from "./pages/admin/dashboard/Dashboard";
+import AddProduct from "./pages/admin/pages/addupdateproduct/AddProduct";
+import Update from "./pages/admin/pages/addupdateproduct/UpdateProduct";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
           </Route>
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
+          <Route path="/updateproduct" element={<Update />} />
+          <Route path="/addproduct" element={<AddProduct />} />
         </Routes>
       </BrowserRouter>
     </div>
