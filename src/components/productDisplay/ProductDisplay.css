@@ -1,5 +1,8 @@
 .productdisplay {
   display: flex;
+  border-radius: var(--border-radius-2);
+  background: var(--color-white);
+  padding: var(--padding-1);
 }
 
 .productdisplay-left {

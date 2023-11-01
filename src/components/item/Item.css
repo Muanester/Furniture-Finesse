@@ -1,6 +1,11 @@
 .item {
   display: grid;
   grid-template-columns: 1fr;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--border-radius-2);
+  background: linear-gradient(180deg, #fde1ff, rgba(225, 255, 234, 0.133) 60%);
+  padding: 0 0 1.5rem 0;
+  box-shadow: var(--box-shadow);
 }
 
 .item p {
@@ -39,6 +44,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: var(--border-radius-2);
 }
 
 @media (max-width: 375px) {

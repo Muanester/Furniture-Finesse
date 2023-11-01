@@ -3,10 +3,17 @@ import "./Dashboard.css";
 import arrow_icon from "../../../components/assets/arrow_back.png";
 import { Link } from "react-router-dom";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+
 import { MdUpdate, MdOutlineDeleteOutline } from "react-icons/md";
 import { FaUsers } from "react-icons/fa";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import { BiSolidMessageDetail } from "react-icons/bi";
+import { BiSolidDashboard } from "react-icons/bi";
+import { BsCardChecklist } from "react-icons/bs";
+import { TbUsersGroup } from "react-icons/tb";
+import { TbMessages } from "react-icons/tb";
+import { FiLogOut } from "react-icons/fi";
+import { GrAdd } from "react-icons/gr";
 
 import all_product from "../../../components/assets/all_product";
 
@@ -44,7 +51,7 @@ function Dashboard() {
                 }}
                 className={tab === "dashboard" ? "active" : ""}
               >
-                <span className="material-symbols-outlined">grid_view</span>
+                <BiSolidDashboard className="span" />
                 <h3>Dashboard</h3>
               </Link>
             </Tab>
@@ -56,7 +63,7 @@ function Dashboard() {
                 }}
                 className={tab === "products" ? "active" : ""}
               >
-                <span className="material-symbols-outlined">inventory</span>
+                <BsCardChecklist className="span" />
                 <h3>Products</h3>
               </Link>
             </Tab>
@@ -68,9 +75,7 @@ function Dashboard() {
                 }}
                 className={tab === "customers" ? "active" : ""}
               >
-                <span className="material-symbols-outlined">
-                  person_outline
-                </span>
+                <TbUsersGroup className="span" />
                 <h3>Customers</h3>
               </Link>
             </Tab>
@@ -82,20 +87,20 @@ function Dashboard() {
                 }}
                 className={tab === "messages" ? "active" : ""}
               >
-                <span className="material-symbols-outlined">mail</span>
+                <TbMessages className="span" />
                 <h3>Messages</h3>
                 <span className="message-count">0</span>
               </Link>
             </Tab>
 
             <Link to={"/addproduct"} className="add_product-tab">
-              <span className="material-symbols-outlined">add</span>
+              <GrAdd className="span" />
               <h3>Add Product</h3>
             </Link>
 
             <div className="logout">
               <Link to={"/"}>
-                <span className="material-symbols-outlined">logout</span>
+                <FiLogOut className="span" />
                 <h3>Log-Out</h3>
               </Link>
             </div>
@@ -276,7 +281,6 @@ function Dashboard() {
           </main>
         </TabPanel>
       </Tabs>
-      ;
     </div>
   );
 }

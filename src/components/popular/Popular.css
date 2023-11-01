@@ -4,8 +4,9 @@
   align-items: center;
   gap: 10px;
   height: auto;
-  padding: 0 100px;
-  margin-bottom: 100px;
+  padding: 0 80px 50px 80px;
+  background: linear-gradient(180deg, #fde1ff, rgba(225, 255, 234, 0.133) 60%);
+  border-radius: var(--card-border-radius);
 }
 
 .popular h1 {

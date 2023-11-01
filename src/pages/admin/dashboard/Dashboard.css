@@ -12,7 +12,7 @@
 body {
   /* width: 100vw;
   height: 100vh; */
-  background: var(--color-background);
+
   user-select: none;
   /* overflow-x: hidden; */
   color: var(--color-dark);
@@ -165,7 +165,7 @@ small {
   }
 }
 
-.aside .sidebar a span {
+.aside .sidebar a .span {
   font-size: 1.6rem;
   transition: all 300ms ease;
 }
@@ -211,6 +211,7 @@ small {
 main {
   margin: 1.4rem 0 0 14rem;
   padding-left: 2rem;
+  width: 100%;
 }
 
 main .date {
@@ -334,6 +335,7 @@ main .insights small {
 /* ======== Recent Orders ========== */
 main .recent-orders {
   margin-top: 2rem;
+  width: 100%;
 }
 
 main .recent-orders h2 {
@@ -372,6 +374,17 @@ main .recent-orders a {
 }
 
 /*========= Products Table ========*/
+.products_data_table {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius-2);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.products_data_table h1 {
+  margin-bottom: 20px;
+}
 
 .products_data_table table {
   border-collapse: collapse;
@@ -407,7 +420,10 @@ main .recent-orders a {
 @media screen and (max-width: 1200px) {
   .dashboard .container {
     width: 94%;
-    grid-template-columns: 7rem auto 23rem;
+  }
+
+  .aside {
+    width: 10rem;
   }
 
   .aside .logo h2 {
@@ -427,23 +443,19 @@ main .recent-orders a {
     margin-top: 1.8rem;
   }
 
+  main {
+    margin: 1.4rem 0 0 10rem;
+    padding-left: 0rem;
+  }
+
   main .insights {
-    grid-template-columns: 1fr;
-    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2;
   }
 
   main .recent-orders {
-    width: 85%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-56%);
-    margin: 2rem 0 0 8.8rem;
-  }
-
-  main table tbody tr td:first-child,
-  main table thead tr th:first-child,
-  main table tbody tr td:last-child {
-    display: none;
+    width: 100%;
+    margin: 2rem 0 0 0rem;
   }
 }
 
@@ -454,54 +466,19 @@ main .recent-orders a {
   }
   .dashboard .container {
     width: 100%;
-    grid-template-columns: 1fr;
   }
 
-  .aside {
-    position: fixed;
-    left: -100%;
-    background: var(--color-white);
-    width: 18rem;
-    z-index: 3;
-    box-shadow: 1rem 3rem 4rem var(--color-light);
-    height: 100vh;
-    padding-right: var(--card-padding);
-    display: none;
-    animation: showMenu 400ms ease forwards;
+  .aside .sidebar {
+    height: 90vh;
+    top: 1rem;
   }
 
-  @keyframes showMenu {
-    to {
-      left: 0;
-    }
-  }
-
-  .aside .logo {
-    margin-left: 1rem;
-  }
-
-  .aside .logo h2,
-  .aside .sidebar h3 {
-    display: inline;
-  }
-
-  .aside .sidebar a {
-    width: 100%;
-    height: 3.4rem;
-  }
-
-  .aside .sidebar a:last-child {
-    position: absolute;
+  .aside .sidebar .logout {
     bottom: 1rem;
   }
 
-  .aside .close {
-    display: inline-block;
-    cursor: pointer;
-  }
-
   main {
-    margin-top: 8rem;
+    margin-top: 4rem;
     padding: 0 1rem;
   }
 
@@ -509,7 +486,6 @@ main .recent-orders a {
     position: relative;
     margin: 3rem 0 0 0;
     width: 100%;
-    transform: translateX(-50%);
   }
 
   main .recent-orders table {
@@ -517,45 +493,36 @@ main .recent-orders a {
     margin: 0;
   }
 
-  .right {
-    width: 94%;
-    margin: 0 auto 4rem;
+  .products_data_table table {
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .aside .sidebar {
+    height: 100vh;
+    top: 1rem;
   }
 
-  .right .top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
-    padding: 0 0.8rem;
-    height: 4.6rem;
-    background: var(--color-white);
+  main {
+    margin-top: 4rem;
+    padding: 0 1rem;
+  }
+
+  main .insights {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2;
+  }
+
+  main .recent-orders {
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+
+  main .recent-orders table {
     width: 100%;
     margin: 0;
-    z-index: 2;
-    box-shadow: 0 1rem 1rem var(--color-light);
-  }
-
-  .right .top .theme-toggler {
-    width: 4.4rem;
-    position: absolute;
-    left: 66%;
-  }
-
-  .right .profile .info {
-    display: none;
-  }
-
-  .right .top button {
-    display: inline-block;
-    background: transparent;
-    cursor: pointer;
-    color: var(--color-dark);
-    position: absolute;
-    left: 1rem;
-  }
-
-  .right .top button span {
-    font-size: 2rem;
+    overflow-x: scroll;
   }
 }
